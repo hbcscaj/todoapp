@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age calculator.com 😋</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="mc">
+    <H3> SIMPLE TO DO WEB APP </H3>
+    <details> Note: Website is currently work in progress <details>
+        Apologies HBC.COM </details></details>
+<p class="hot"> insert task🕕 <input type="text" class="data" placeholder="INSERT"></p>
+<p class="calc"> No tasks❎</p>
+<button class="calcd">ADD THE TASK📝</button>
+<button class="calce">REMOVE THE TASK🤏 </button>
+</div>
+<footer>
+    <p class="ki"> Follow @github hbcscaj github</p>
+    <p class="ji"> support  privacy   terms of use   licesnse</p>
+    <p class="hii">ALL RIGHTS RESERVED &#169 HBC.COM 
+       </p>
+</footer>
+    <script> 
+
+var out=document.querySelector(".hot");
+var calc=document.querySelector(".calc");
+var btn=document.querySelector(".calcd");
+var btni=document.querySelector(".calce");
+var data=document.querySelector(".data")
+var record=[]
+var add=() =>{
+    record.push(data.value)
+    calc.textContent=record;
+    console.log(record)
+
+
+}
+
+var remove=() =>{
+  record.pop(data.value)
+    alert("task finished")
+   calc.textContent=record   
+   if(record.length===0){
+         calc.textContent="All task are finished🏁"
+   }
+}
+btn.addEventListener('click',add)
+btni.addEventListener('click',remove)
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
